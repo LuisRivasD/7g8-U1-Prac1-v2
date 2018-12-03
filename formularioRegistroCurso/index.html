@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
+    <title>Registro de Curso</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://universidadesdemexico.mx/logos/original/logo-instituto-tecnologico-de-orizaba.png">    
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css"> 
+    
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container register">
+                <div class="row">
+                    <div class="col-md-3 register-left">
+                        <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
+                        <h3>Bienvenido</h3>
+                        <p>Estas a un minuto del sitio para profesionales de la programación mas completo de la interwebs</p>
+                        <p>¿Ya tienes cuenta?</p>
+                        <a href="https://platzi.com/login/"  target="_blank"><input id="botonIniciarSesion" type="submit" name="" value="Iniciar Sesión" /></a>
+                    </div>
+                    <div class="col-md-9 register-right">
+                        <!-- <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Employee</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Hirer</a>
+                            </li>
+                        </ul> -->
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <h3 class="register-heading">Registro a nuevo curso</h3>
+                                <div>
+                                <form class="row register-form" method="post" action="ctrlFrm.php">    
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input id="idTxtNombre" name="txtNombre" type="text"  class="form-control" placeholder="Nombre *"  autofocus required/>
+                                        </div>
+                                        <div class="form-group">
+                                            <input id="idTxtApellido" name="txtApellido" type="text"  class="form-control" placeholder="Apellido *"/>
+                                        </div>
+                                        <div class="form-group">
+                                            <input id="idTxtFecNac" name="txtFecNac" type="text" class="form-control" placeholder="Fecha de Nacimiento" onfocus="(this.type='date')"/>
+                                            <!-- <input id="idTxtFecNac" name="txtFecNac" type = "date"> -->
+                                        </div>
+                                        <div class="form-group">
+                                            <!-- <label id="idLabelGenero" for="txtGenero">Genero:</label>
+                                                <input list="lGenero" id="idTxtGen" name="txtGenero">
+                                                <datalist id="lGenero">
+                                                    <option value="Femenino"/>
+                                                    <option value="Masculino"/>
+                                                    <option value="Prefiero no decir"/>
+                                                </datalist> -->
+                                            <select class="form-control" id="idTxtGen" name="txtGenero">
+                                                <option class="hidden"  selected disabled>Genero</option>
+                                                <option>Femenino</option>
+                                                <option>Masculino</option>
+                                                <option>Prefiero no decir</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                                <input id="idTxtArchFoto" name="txtArchFoto" type="text" class="form-control" placeholder="Foto de perfil" onfocus="(this.type='file')"/>
+                                                <!-- <input id="idTxtArchFoto" name="txtArchFoto" type="file" id="idTxtArch" name="txtArch" accept="image/gif, image/png"/></td> -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input id="idTxtFecInicio" name="txtFecInicio" type="text" class="form-control" placeholder="Fecha de inicio de curso" onfocus="(this.type='date')"/>
+                                            <!-- <input id="idTxtFecInicio" name="txtFecInicio" type = "date"> -->
+                                        </div>
+                                        <div class="form-group">
+                                            <input id="idTxtCorreo" name="txtCorreo" type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control" placeholder="Correo electrónico *"  />
+                                        </div>
+                                        <div class="form-group">
+                                            <input id="idTxtPassword" name="txtPassword" type="password" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control" placeholder="Contraseña *"  autocomplete="new-password" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input id="idTxtWebPersonal" name="txtWebPersonal" type="text" class="form-control" placeholder="Página Web personal *"  />
+                                        </div>
+                                        <div class="form-group">
+                                                <!-- <label id="idLabelCurso" for="txtCurso">Curso:</label>
+                                                <input list="lCurso" id="idTxtCurso" name="txtCurso">
+                                                <datalist id="lCurso">
+                                                    <option value="HTML5"/>
+                                                    <option value="PHP Avanzado"/>
+                                                    <option value="JSP para principiantes"/>
+                                                    <option value="JSON intermedio"/>
+                                                </datalist> -->
+                                            <select class="form-control" id="idTxtCurso" name="txtCurso">
+                                                <option class="hidden"  selected disabled>Curso deseado</option>
+                                                <option>HTML5</option>
+                                                <option>PHP Avanzado</option>
+                                                <option>JSP para principiantes</option>
+                                                <option>JSON intermedio</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                                <label id="labelColor" for="txtColor"> Color de fondo para cursos : </label></td>
+                                                <input type="color" id="idTxtColor" name="txtColor" 
+                                                list="lColores"/>
+                                                <datalist id="lColores">
+                                                    <option value="#F08080" label="Coral_claro"/>
+                                                    <option value="#DB7093" label="Violeta_claro"/>
+                                                    <option value="#32CD32" label="Verde_lima"/>
+                                                    <option value="#66CDAA" label="Aguamarina_medio"/>
+                                                </datalist>
+                                        </div>
+                                        <input type="submit" class="btnRegister" name="btnEnviar" value="Registrarse"/>
+                                    </div>
+                                </form>
+                                
+                                </div>
+                            </div>
+                            <!-- <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <h3  class="register-heading">Apply as a Hirer</h3>
+                                <div class="row register-form">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="First Name *"  />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Last Name *"  />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="Email *"  />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" maxlength="10" minlength="10" class="form-control" placeholder="Phone *"  />
+                                        </div>
+
+
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" placeholder="Password *"  />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" placeholder="Confirm Password *"  />
+                                        </div>
+                                        <div class="form-group">
+                                            <select class="form-control">
+                                                <option class="hidden"  selected disabled>Please select your Sequrity Question</option>
+                                                <option>What is your Birthdate?</option>
+                                                <option>What is Your old Phone Number</option>
+                                                <option>What is your Pet Name?</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="`Answer *"  />
+                                        </div>
+                                        <input type="submit" class="btnRegister"  value="Register"/>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+<script type="text/javascript">
+
+</script>
+</body>
+</html>
