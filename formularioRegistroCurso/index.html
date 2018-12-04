@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="utf-8">
-    <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
+
     <title>Registro de Curso</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="https://universidadesdemexico.mx/logos/original/logo-instituto-tecnologico-de-orizaba.png">    
@@ -23,14 +23,7 @@
                         <a href="https://platzi.com/login/"  target="_blank"><input id="botonIniciarSesion" type="submit" name="" value="Iniciar Sesión" /></a>
                     </div>
                     <div class="col-md-9 register-right">
-                        <!-- <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Employee</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Hirer</a>
-                            </li>
-                        </ul> -->
+
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                 <h3 class="register-heading">Registro a nuevo curso</h3>
@@ -45,16 +38,10 @@
                                         </div>
                                         <div class="form-group">
                                             <input id="idTxtFecNac" name="txtFecNac" type="text" class="form-control" placeholder="Fecha de Nacimiento" onfocus="(this.type='date')"/>
-                                            <!-- <input id="idTxtFecNac" name="txtFecNac" type = "date"> -->
+
                                         </div>
                                         <div class="form-group">
-                                            <!-- <label id="idLabelGenero" for="txtGenero">Genero:</label>
-                                                <input list="lGenero" id="idTxtGen" name="txtGenero">
-                                                <datalist id="lGenero">
-                                                    <option value="Femenino"/>
-                                                    <option value="Masculino"/>
-                                                    <option value="Prefiero no decir"/>
-                                                </datalist> -->
+
                                             <select class="form-control" id="idTxtGen" name="txtGenero">
                                                 <option class="hidden"  selected disabled>Genero</option>
                                                 <option>Femenino</option>
@@ -64,32 +51,25 @@
                                         </div>
                                         <div class="form-group">
                                                 <input id="idTxtArchFoto" name="txtArchFoto" type="text" class="form-control" placeholder="Foto de perfil" onfocus="(this.type='file')"/>
-                                                <!-- <input id="idTxtArchFoto" name="txtArchFoto" type="file" id="idTxtArch" name="txtArch" accept="image/gif, image/png"/></td> -->
+
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <input id="idTxtFecInicio" name="txtFecInicio" type="text" class="form-control" placeholder="Fecha de inicio de curso" onfocus="(this.type='date')"/>
-                                            <!-- <input id="idTxtFecInicio" name="txtFecInicio" type = "date"> -->
+
                                         </div>
                                         <div class="form-group">
-                                            <input id="idTxtCorreo" name="txtCorreo" type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control" placeholder="Correo electrónico *"  />
+                                            <input id="idTxtCorreo" name="txtCorreo" type="text" minlength="10" maxlength="50"  class="form-control" placeholder="Correo electrónico *"  />
                                         </div>
                                         <div class="form-group">
-                                            <input id="idTxtPassword" name="txtPassword" type="password" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control" placeholder="Contraseña *"  autocomplete="new-password" />
+                                            <input id="idTxtPassword" name="txtPassword" type="password" class="form-control" placeholder="Contraseña *"  pattern="([0-9]{3}[@,+]{1}[a-z]{2}[A-Z]{1}[0-9]{2})"/>
                                         </div>
                                         <div class="form-group">
                                             <input id="idTxtWebPersonal" name="txtWebPersonal" type="text" class="form-control" placeholder="Página Web personal *"  />
                                         </div>
                                         <div class="form-group">
-                                                <!-- <label id="idLabelCurso" for="txtCurso">Curso:</label>
-                                                <input list="lCurso" id="idTxtCurso" name="txtCurso">
-                                                <datalist id="lCurso">
-                                                    <option value="HTML5"/>
-                                                    <option value="PHP Avanzado"/>
-                                                    <option value="JSP para principiantes"/>
-                                                    <option value="JSON intermedio"/>
-                                                </datalist> -->
+                                                
                                             <select class="form-control" id="idTxtCurso" name="txtCurso">
                                                 <option class="hidden"  selected disabled>Curso deseado</option>
                                                 <option>HTML5</option>
@@ -115,23 +95,6 @@
                                 
                                 </div>
                             </div>
-                            <!-- <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                <h3  class="register-heading">Apply as a Hirer</h3>
-                                <div class="row register-form">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="First Name *"  />
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Last Name *"  />
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" placeholder="Email *"  />
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" maxlength="10" minlength="10" class="form-control" placeholder="Phone *"  />
-                                        </div>
-
 
                                     </div>
                                     <div class="col-md-6">
